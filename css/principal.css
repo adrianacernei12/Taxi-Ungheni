@@ -1,0 +1,580 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(#83370149, #ff6a0000), url("../images/ba.jpg");
+    background-size:cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px;
+
+}
+.nav-bar .title{
+    color: white;
+    font-size: 67px;
+    font-weight: 600px;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px black;
+
+}
+span{
+    color:goldenrod;
+}
+.span-1{
+    color:white;
+}
+.nav-bar p{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 15px;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    margin-left: 10px;
+    transition: .4s ease;
+    text-shadow: 1px 1px 1px black;
+}
+i{
+    
+    list-style: none;
+    display: inline-block;
+    color: white;
+}
+li i {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 5px;
+    text-shadow: 1px 1px 1px black;
+    
+}
+li a:hover{
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+
+}
+.home{
+    height: 400px;
+    padding: 60px;
+    font-weight: 600;
+}
+.home a{
+    color: beige;
+    text-decoration: none;
+    text-align: center;
+    margin: 5px;
+
+}
+.title-1{
+    font-size: 66px;
+    color: beige;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px black;
+
+}
+.home .content p{
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+    text-shadow: 1px 1px 1px black;
+}
+.home button {
+    color: #f5f5f5;
+    background: goldenrod;
+    font-size: 22px;
+    padding: 5px 30px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    transition: .4s ease;
+    cursor: pointer;
+}
+.home button:hover{
+    background: none;
+    border: 2px solid goldenrod;
+
+}
+/* .intro-video{
+    display: flex;
+    max-height: 20vh;
+    margin: 10px auto ;
+    max-width: 100%;
+
+} */
+.logo {
+    color: white;
+    text-align: left;
+    text-shadow: 1px 1px 1px black;
+}
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: all o,3s;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+.title-2 {
+    border-bottom: 4px solid goldenrod;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+main {
+    margin: 10px 10% 60px 220px;
+    padding: 0px 25px;
+}
+.text {
+    color:black;
+    text-align: left;
+    margin: 25px;
+    line-height: 200%; 
+    width: 35%;
+}
+.home {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+
+.home .img {
+     height: 70vh; 
+    flex: 1 1 350px;
+}
+
+.home .img img {
+    width: 85%;
+    flex-wrap: wrap;
+    z-index: 0;
+    border-radius: 55%;
+    color: rgba(210, 105, 30, 0.164) rgba(255, 255, 255, 0.26);
+
+}
+.home .content h2 {
+    font-size: 60px;
+    color: beige;
+    text-shadow: 1px 1px 1px black;
+}
+
+ .changecontent::after{
+    content: '  ';
+    color: goldenrod;
+    animation: changetext 10s infinite linear;
+    font-weight: bold;
+    
+  
+}
+@keyframes changetext {
+    0%{content: " Transportarea Pasagerilor";}
+    20%{content: "Întâmpinarea Pasagerilor";}
+    50%{content: "Serviciu “Șofer Treaz”";}
+    70%{content: "TAXI CORPORATIV"}
+    100%{content: "TAXI “Bonă”"}
+
+}
+  
+  .changecontact::after{
+    content: '  ';
+    color: goldenrod;
+    animation: changetexte 10s infinite linear;
+    font-weight: bold;
+    font-size: 50px;
+    
+  
+}
+.home .content {
+    flex: 1 1 400px;
+    margin-left: 60px;
+}
+.home-1{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+
+ .home-1 .img {
+    height: 70vh;
+    flex: 1 1 200px;
+   
+}
+
+.home-1 .img img {
+    width: 100%;
+    flex-wrap: wrap;
+    z-index: 0;
+   
+}
+.home-1 .cont {
+    flex: 1 1 400px;
+    margin-left: 60px;
+}
+
+.cont h3 {
+    font-size: 40px;
+    color: goldenrod;
+    text-shadow: 1px 1px 1px black;
+}
+
+.cont h2 {
+    font-size: 60px;
+    color: goldenrod;
+    text-shadow: 1px 1px 1px black;
+}
+
+  .cont p{
+    color: black;
+    font-size: 30px;
+    width: 70%;
+  }
+.text-1{
+    color:rgb(255, 255, 255);
+    background-color: goldenrod;
+    border: 2px solid rgba(218, 165, 32, 0.452);
+    text-shadow: 1px 1px 1px black;
+    border-radius: 5px;
+    text-align: center;
+    margin: 25px;
+    line-height: 200%; 
+}
+
+.text-2{
+    text-align: left;
+    margin: 25px;
+    line-height: 200%; 
+    border-radius: 5px;
+} 
+.icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 15px;
+}
+.icons:hover{
+        transform: scale(1.05);
+        transition: all 0.3s;
+}
+.icons{
+    padding: 9px;
+    background: goldenrod;
+    border-radius: 100%;
+    text-align: center;
+    flex: 1 1 50px;
+}
+.icons i{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: beige;
+}
+.icons h4{
+    color: beige;
+    text-shadow: 1px 1px 1px black;
+}
+#product-cards h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: chocolate;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid chocolate;
+}
+#product-cards .card{
+    background-color: chocolate;
+    box-shadow: 0 0 3px black;
+    border-radius: 0px;
+    cursor: pointer;
+}
+#product-cards h3{
+    color: beige;
+    text-shadow:1px 1px 1px black ;
+}
+#product-cards p{
+    color: beige;
+    font-weight: bold;
+}
+#product-cards h6{
+    font-size: 20px;
+    color: beige;
+    font-weight: bold;
+}
+#product-cards h6 button{
+    width: 100px;
+    height: 26px;
+    font-size: 15px;
+    background: transparent;
+    letter-spacing: 3px;
+    border: 2px solid  beige;
+    float: right;
+    color: #f5f5f5;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#product-cards h6 button:hover{
+    background-color: rgba(210, 105, 30, 0.562);
+    color: beige;
+}
+.star{
+    color: beige;
+}
+.star .checked{
+    color: yellow;
+}
+ .overlay{
+    display: block;
+    opacity: 0; 
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+} 
+#product-cards .card:hover .overlay{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s ease;
+}
+.overlay i {
+    background-color: rgba(210, 105, 30, 0.562);
+    color: beige;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    padding: 7px;
+    margin: -20px;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+.overlay .btn-secondary{
+    background: transparent !important;
+    border: none;
+    box-shadow: 1px 1px 1px black;
+}
+.row{
+    overflow: auto;
+}
+[class^="col-"] {
+    float: left;
+    padding: 5px;
+}
+.col-10{width: 10%;}
+.col-20{width: 20%;}
+.col-30{width: 30%;}
+.col-40{width: 40%;}
+.col-50{width: 50%;}
+.col-60{width: 60%;}
+.col-70{width: 70%;}
+.col-80{width: 80%;}
+.col-90{width: 90%;}
+.col-100{width: 100%;}
+.img-1{
+    width: 100%;
+    border: 2px solid black;
+}
+.img{
+    width: 100%;
+    border: 2px solid black;
+    margin: 20px;
+}
+.tarife{
+    height: 150vh;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-body{
+    padding: 60px;
+    background-color: goldenrod;
+    background-size:cover;
+    background-position: center; 
+    border: 2px solid black;
+    width: 100%;
+
+}
+.contact-list{
+    line-height: 200%;
+    list-style: linear-gradient(goldenrod, #fffffc);
+}
+
+.adress-list{
+    line-height: 200%;
+    color: goldenrod;
+}
+
+.map{
+    width: 100%;
+    max-width: 500px;
+    height: 600px;
+    margin: 20px;
+}
+.img-2{
+    width: 80%;
+    border: 2px solid black;
+    margin: 20px;
+}
+.centred {
+    text-align: center;
+}
+.contact-form{
+    background-color: goldenrod;
+    max-width: 550px;
+    height: 250px;
+    padding: 5px 5px;
+    margin: 20px;
+    border-bottom: 1px 1px 1px black;
+    
+} 
+.contact-form input, .contact-form textarea {
+    display: block;
+    width: 90%;
+    margin: 15px;
+    resize: none;
+    font-family: inherit;
+    padding: 2px;
+    font-size: 15px;
+} 
+
+#menu-btn {
+    display: none;
+    color: #ffffff;
+    font-size: 27px;
+    top: 10vh;
+    right: 25px;
+   
+}
+.show{
+    display: block !important;
+}
+@media (max-width: 768px) {
+    body{ 
+        font-size: 16px;
+    }
+    [class^="col-"] {
+        width: 100%;
+       
+}
+main { 
+    margin: 0px;
+    padding: 10px 15px 20px 15px;
+    
+}
+.container{
+    height:50vh;
+}
+
+.nav-bar{
+    display: none;
+    /* width: 90px;
+    height: 70vh;
+    position: relative; */
+    padding-top: 5px;
+    margin: 5px;
+}
+
+.home {
+    height: 50vh;
+}
+
+.home-1 .img{
+    height: 40vh}
+.cont h2{
+    font-size: 40px;
+}
+.cont h3{
+    font-size: 30px;
+}
+.cont p{
+font-size: 20px;
+height: 80vh;
+}
+.icons{
+  margin: 5px;
+}
+.col-30{
+    display: none;
+}
+
+.row{
+    height: 200vh;
+}
+.card-body{
+    padding: 0px 15px 15px 15px;
+    background-color: goldenrod;
+    border-radius: 5px;
+    height: 250px;
+    overflow-y: scroll;
+}
+.img-1{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.nav-bar .title{display: none;}
+li a{font-size: 25px;}
+li i{ font-size: 20px;}
+.nav-bar p{
+    display: none;
+}
+.title-1{
+    font-size: 40px;
+}
+.home button{
+    height: 30px;
+    font-size: 12px;
+}
+.tarife .img-1{
+   }
+.map{
+  height: 30vh;
+  margin: 10px;
+  width: 90%;
+}
+#cart{
+    position: relative;
+    top: 0px;
+    left: 5px;
+}
+#menu-btn {
+    display: block;
+}
+}
+

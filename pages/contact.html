@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../css/principal.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     
+        <title>Taxi ungheni</title>
+        <link rel="icon" href="../images/link.png">
+        </head>
+
+    <body>    
+    <div class="container">
+        <li><i id="menu-btn" class="fas fa-bars" onclick="show()"></i></li>
+         <div id="nav-text" class="nav-bar">
+            <h1 class="title">Ta<span>xi</span><i class="fas fa-taxi logo"></i></h1>
+            <p>2-22-22</p>
+            <ul>
+                
+                <li><a target="_blank" href="https://ro-ro.facebook.com/taxiavantaj/#:~:text=TAXI%20Avantaj%202%2D22%2D22%20%7C%20Ungheni"><i id="social-btn" class="fab fa-facebook" onclick="open()"></i></a></li>
+                <!-- <li><a target="_blank" href="https://www.instagram.com/patiseriacookies/"><i id="social-btn"class="fab fa-instagram" onclick="open()"></i></a></li>
+                <li><a target="_blank" href="https://mail.google.com/mail/u/1/#inbox?compose=CllgCJTMXgKVtXHgmshxNqMPjCQxrbsxCZJgTsqJztqpkPhGBzmzFDlmkclDdSpHvwhPRTbcHSq"><i class="far fa-envelope" onclick="open()"></i></a></li> -->
+                <li><a href="../principal.html">Home</a><i class="fas fa-house-user logo"></i></li>
+                <li><a href="menu.html">Sericii</a><i class="far fa-folder-open logo"></i></li>
+                <li><a href="tarifele.html">Tarife</a><i class="fas fa-comments-dollar logo"></i></li>
+                <li><a href="contact.html">Contacte</a><i class="fas fa-users logo"></i></li>
+                
+
+               
+            </ul>
+        </div>
+        <div class="home">
+            <div class="content">
+                <h2>Contacta<span>-ține</span> </h2>
+                <!-- <h3 class="changecontent"></h3> -->
+                <p><b>Telefon:</b>069404790
+                    <br><b>Adresa:</b>str.Alexandru cel bun 30, Ungheni
+                </p>
+                <br><a target="_blank" href="https://forms.gle/g3wdDbA17ZbQSQDS8"><button type="button">Angajăm <i id="cart" class="fas fa-user-plus" onclick="open"></i></button></a>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-100">
+                      <div class="col-50">
+                        
+                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.2850421822923!2d27.79050191510937!3d47.21100472321543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb010172869ba9%3A0xb700ad54f492ee93!2sTaxi%20Ungheni%200236%202%2022%2022.%200236%203%2033%2033.!5e0!3m2!1sro!2s!4v1676115735847!5m2!1sro!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <a src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.2850421822923!2d27.79050191510937!3d47.21100472321543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb010172869ba9%3A0xb700ad54f492ee93!2sTaxi%20Ungheni%200236%202%2022%2022.%200236%203%2033%2033.!5e0!3m2!1sro!2s!4v1676997316251!5m2!1sro!2s"><i class="fas fa-location-dot"></i></a>
+                    </div>   
+                        
+                        
+                    <div class="col-50">
+                    
+                        <div class="contact-form">
+                            <form onsubmit="sendEmail()">
+                                <h3 class="centred">Lasă feedback</h3>
+                                    <input id="form_name" type="text" placeholder="Nume" required="required" data-error="Introduceti Prenumele DVS.">
+                                <input id="form_email" type="email" placeholder="Email" required/>
+                                <textarea id="message" rows="4" placeholder="Feedback"></textarea>
+                                <button type="submit">Transmite</button>
+                            </form> 
+                        </div>
+                       <img class="img-2" src="../images/echipa.jpg" alt=""> 
+                    </div>
+                 </div>
+        </div>
+                        <script src="../js/main.js"></script>
+    </body>
+</html>
